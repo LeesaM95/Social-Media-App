@@ -1,16 +1,16 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const thoughtSchema = new mongoose.Schema(
+const thoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
-            required: "Post can't be blank!",
+            required: true,
             minLength: 1,
             maxLength: 280,
-        }, 
-        createdAt: {    
-            type: Date,    
-            default: Date.now,     
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now,
             get: (timestamp) => dateFormat(timestamp),
         },
         username: {
@@ -24,49 +24,56 @@ const thoughtSchema = new mongoose.Schema(
     },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
+            getters: true
         },
         id: false,
     }
 );
 
-// Reaction mini-model that DOES NOT NEED to be in its' own .js file
-    const reactionSchema = new Schema({
-        reactionId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId(),
-        },
-        reactionBody: {
-            types: String,
-            required: true,
-            maxLength: 280,
-        },
-        username: {
-            types: String,
-            required: true,
-        },
-        createdAt: {
-            types: Date,
-            default: Date.now,
-            get: (timestamp) => dateFormat(timestamp),
-        },
+const reactionSchema = new Schema({
+    reactionId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId(),
     },
-        {
-            toJSON: {
-                virtuals: true,
-            },
-            id: false,
+    reactionBody: {
+        types: String,
+        required: true,
+        maxLength: 280,
+    },
+    username: {
+        types: String,
+        required: true,
+    },
+    createdAt: {
+        types: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
+    },
+},
+    {
+        toJSON: {
+            getters: true,
         },
-    );
+        id: false,
+    },
+);
 
-    // **Schema Settings**:
+const thoughtTextSchema = new Schema({
+    thoughtText: {
+        type: thoughtSchema,
+        required: true,
+    }
+})
 
-    // Create a virtual called `reactionCount` that retrieves the length of the thought's `reactions` array field on query.
-    reactionSchema.virtual("reactionCount").get(function() {
-        return this.reactions.length;
-    });
+// **Schema Settings**:
 
-    const Thought = model("Thought", thoughtSchema);
+// Create a virtual called `reactionCount` that retrieves the length of the thought's `reactions` array field on query.
+reactionSchema.virtual("reactionCount").get(function () {
+    return this.reactions.length;
+});
 
-    module.exports = Thought;
+const Thought = model("Thought", thoughtSchema);
+
+module.exports = Thought;
 

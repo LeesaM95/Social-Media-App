@@ -39,5 +39,8 @@ module.exports = {
         } catch (err) {
             res.status(500).json(err);
         }
-    }
+    },
+    // addFriend logic
+    // updateFriend Logic
+    // removeFriend Logic
 }
