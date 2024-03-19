@@ -34,3 +34,4 @@ const possibleThoughts = [
 
 ];
 
+module.exports =  { usernames, possibleThoughts };
