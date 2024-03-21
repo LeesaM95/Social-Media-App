@@ -26,14 +26,14 @@ router
 router.route('/:userId/friends').post(addFriend);
 
 //for a user to update friends
-// found under '/api/users/friends/:friendId'
+// found under '/api/users/:userId/friends/:friendId'
 
-router.route('/:user/friends/:friendId').put(updateFriends);
+router.route('/:userId/friends').put(updateFriends);
 
 // for a user to delete friends off of their list
 // found under '/api/users/:userId/friends/:friendId'
 
-router.route('/:users/:userId/friends/:friendId')
+router.route('/:users/:userId/friends/:friendId').delete(removeFriend)
 
 
 
