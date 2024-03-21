@@ -4,6 +4,7 @@ module.exports = {
     async getThoughts(req, res) {
         try {
             const thoughts = await Thought.find();
+                
             res.json(thoughts);
         } catch (err) {
             console.log(err);
@@ -34,7 +35,7 @@ module.exports = {
                     message: "Thought create, but found no user with that ID"
                 })
             }
-            ewa.jaon("Created the Thought 🥳")
+            res.json(thoughts)
         } catch (err) {
             console.log(err);
             res.status(500).json(err);
