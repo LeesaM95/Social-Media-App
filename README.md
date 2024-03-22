@@ -9,16 +9,16 @@ This application is a social media-esque app run through Insomnia or other simil
 Below are several gifs that showcase how Insomnia is used to handle requests. 
 
 **Getting Users and Thoughts Example**:
-<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getthoughtsandusers.mp4" title=""></video>
+<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getthoughtsandusers.mov" title=""></video>
 
 **Getting a Single User**:
-<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsingleuserexample.mp4" title=""></video>
+<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsingleuserexample.mov" title=""></video>
 
 **Getting a Single Thought**:
-<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsinglethoughtexample.mp4" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsinglethoughtexample.mov" title="Title"></video>
 
 **Adding a User Example**:
-<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/postuserexample.mp4" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/postuserexample.mov" title="Title"></video>
 
 **Adding a Thought Example**:
 <video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/createthoughtexample.mp4" title="Title"></video>
@@ -27,7 +27,8 @@ Below are several gifs that showcase how Insomnia is used to handle requests.
 <video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/deleteuserexample.mp4" title="Title"></video>
 
 **Adding a Friend Example**:
-<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/addfriendexample.mp4" title="Title"></video>
+<video src="[https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/addfriendexample.mp4](https://github.com/LeesaM95/Social-Media-App/assets/146777629/eed7f4fb-0967-4036-a452-21917541d639)" title="Title"></video>
+((My Examples seem to be too large and won't render on my readme. I apologize for that)).
 
 ## Installation
 This Application runs through Insomnia, an API testing tool that supports simple API requests, environment variables, request chaining, and powerful plugins. However, other API testing tools such as Postman will also work. These are a must to replicate the same data. 
