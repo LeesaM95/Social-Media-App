@@ -9,25 +9,25 @@ This application is a social media-esque app run through Insomnia or other simil
 Below are several gifs that showcase how Insomnia is used to handle requests. 
 
 **Getting Users and Thoughts Example**:
-<video controls src="[Assets/videos/getthoughtsandusers.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getthoughtsandusers.mp4)" title=""></video>
+<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getthoughtsandusers.mp4" title=""></video>
 
 **Getting a Single User**:
-<video controls src="[Assets/videos/getsingleuserexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsingleuserexample.mp4)" title=""></video>
+<video  src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsingleuserexample.mp4" title=""></video>
 
 **Getting a Single Thought**:
-<video controls src="[Assets/videos/getsinglethoughtexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsinglethoughtexample.mp4)" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/getsinglethoughtexample.mp4" title="Title"></video>
 
 **Adding a User Example**:
-<video controls src="[Assets/videos/adduserexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/postuserexample.mp4)" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/postuserexample.mp4" title="Title"></video>
 
 **Adding a Thought Example**:
-<video controls src="[Assets/videos/createthoughtexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/createthoughtexample.mp4)" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/createthoughtexample.mp4" title="Title"></video>
 
 **Deleting a User Example**:
-<video controls src="[Assets/videos/deleteuserexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/deleteuserexample.mp4)" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/deleteuserexample.mp4" title="Title"></video>
 
 **Adding a Friend Example**:
-<video controls src="[Assets/videos/addfriendexample.mp4](https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/addfriendexample.mp4)" title="Title"></video>
+<video src="https://github.com/LeesaM95/Social-Media-App/blob/main/Assets/videos/addfriendexample.mp4" title="Title"></video>
 
 ## Installation
 This Application runs through Insomnia, an API testing tool that supports simple API requests, environment variables, request chaining, and powerful plugins. However, other API testing tools such as Postman will also work. These are a must to replicate the same data. 
