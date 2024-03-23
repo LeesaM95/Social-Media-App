@@ -42,11 +42,11 @@ Once that's all set, you'll be able to go through and replicate everything!
 ## Usage
 Mongooose & Friends runs as a faux social media app to demonstrate how social media networks handle user data. When open in Insomnia, programmers can simulate retrieving users and thoughts, adding and deleting users and thoughts, and also adding and deleting friends of the users. 
 
-**Retrieving Users** - `http://localhost:3001/api/users`
-**Retrieving Thoughts** - `http://localhost:3001/api/thoughts`
-**Retrieving a Single User** - `http://localhost:3001/api/users/:userId`
-**Retrieving a Single Thought** - `http://localhost:3001/api/thoughts/:thoughtId`
-**Adding a User** - `http://localhost:3001/api/users` - POST
+> **Retrieving Users** - `http://localhost:3001/api/users`
+> **Retrieving Thoughts** - `http://localhost:3001/api/thoughts`
+> **Retrieving a Single User** - `http://localhost:3001/api/users/:userId`
+> **Retrieving a Single Thought** - `http://localhost:3001/api/thoughts/:thoughtId`
+> **Adding a User** - `http://localhost:3001/api/users` - POST
                   - ``{"username": "[Username]",
 		                  "email": "[Email]",
 		                  "thoughts": [],
@@ -54,7 +54,7 @@ Mongooose & Friends runs as a faux social media app to demonstrate how social me
 		                  "__V": 0,
 		                  "friendCount": 0
 	                    }``
-**Adding a Thought** - `http://localhost:3001/api/thoughts` - POST
+> **Adding a Thought** - `http://localhost:3001/api/thoughts` - POST
                      - ``{"_id": "[User Id from /api/users]",
                           "thoughtText": "[Whatever text you want here]",
                           "username": "[ username ]",
@@ -69,10 +69,10 @@ Mongooose & Friends runs as a faux social media app to demonstrate how social me
                           "__v": 0,
 		                      "createdAt": "[ Same thing as above ]"
 	                      }``
-**Deleting a User** - `http://localhost:3001/api/users/:userID` - DELETE
-**Deleting a Thought** - `http://localhost:3001/api/thoughts/thoughtID` - DELETE
+> **Deleting a User** - `http://localhost:3001/api/users/:userID` - DELETE
+> **Deleting a Thought** - `http://localhost:3001/api/thoughts/thoughtID` - DELETE
 
-**Adding a Friend** - `http://localhost:3001/api/users/:userId/friends` - POST
+> **Adding a Friend** - `http://localhost:3001/api/users/:userId/friends` - POST
                     - ``{"username": "[Username]",
 		                  "email": "[Email]",
 		                  "thoughts": [],
@@ -80,7 +80,7 @@ Mongooose & Friends runs as a faux social media app to demonstrate how social me
 		                  "__V": 0,
 		                  "friendCount": 0
 	                    }``
-**Removing a Friend**: Not Applicable at the moment. It will be though. 
+> **Removing a Friend**: Not Applicable at the moment. It will be though. 
 
 ## Support
 If you're having any trouble at all, feel free to find me on GitHub, or via my email `leesamarie95@gmail.com`. I'll do my best to answer any questions you have. If you can't get a hold of me for some reason, Stack Overflow, the GitHub Forums, or other coding forums may have the answers you're looking for as well.
