@@ -21,6 +21,24 @@ module.exports = {
             res.status(500).json(err);
         }
     },
+    async updateUser(req,res) {
+        try {
+            const users = await User.findOneAndUpdate(
+                {_id: req.params.userId},
+                {$set: req.body},
+                {runValidators: true , new: true }
+            )
+            if(!users) {
+                return res.status(404).json({ 
+                    message: "No user with this Id!"
+                })
+            }
+            res.json(users)
+        } catch (err) {
+            console.log(err)
+            res.status(500).json(err);
+        }
+    },
     async createUser(req, res) {
         try {
             const user = await User.create(req.body)
@@ -65,7 +83,7 @@ module.exports = {
                 {$pull: { friends:  req.params.friendId}},
                 { runValidators: true, new: true }
                 )
-            if (!thoughts) {
+            if (!users) {
                 return res.status(404).json({ message: 'no friend with this id!'})
             }
 

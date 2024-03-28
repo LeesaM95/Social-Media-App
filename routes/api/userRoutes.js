@@ -3,6 +3,7 @@ const {
   getUsers,
   getSingleUser,
   createUser,
+  updateUser,
   deleteUser,
   addFriend,
   removeFriend
@@ -18,16 +19,15 @@ router.route('/').get(getUsers).post(createUser);
 router
   .route('/:userId')
   .get(getSingleUser)
+  .put(updateUser)
   .delete(deleteUser)
 
 // for a user to add friends
-// can be found under '/api/users/:userId
-router.route('/:userId/friends').post(addFriend);
+// can be found under '/api/users/friends/:friendId
+router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
 
 // for a user to delete friends off of their list
 // found under '/api/users/:userId/friends/:friendId'
-
-router.route('/users/:userId/:friendId').delete(removeFriend)
 
 
 
